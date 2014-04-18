@@ -1,0 +1,63 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      
+      <%#= link_to "ТермоСИП", root_path, id: "logo" %>
+      <a class="brand" href="/">ТермоСип</a>
+
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+
+      <nav>
+        <ul class="nav pull-right">
+          <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Главная", root_path %></li>
+          <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "О компании", about_path %></li>
+          <li class="<%= 'active' if current_page?(price_path) %>"><%= link_to "Прайс-лист", price_path %></li>
+          <li class="<%= 'active' if current_page?(articles_path) %>"><%= link_to "Статьи", articles_path %></li>
+          
+          <li id="fat-menu" class="dropdown <%= 'active' if current_page?(fotomaterial_path) || current_page?(videomaterial_path) %>">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Наши работы<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Фотографии", fotomaterial_path %></li>
+              <li class="divider"></li>
+              <li><%= link_to "Видео", videomaterial_path %></li>
+            </ul>
+          </li>
+
+          <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Контакты", contact_path %></li>
+          <% if signed_in? %>
+            <li><%= link_to "Users", users_path %></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+            <li><%#= link_to "Sign in", signin_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+
+    </div>
+    <!-- END Everything you want hidden at 940px or less, place within here --> 
+    
+    </div>
+  </div>
+</header>

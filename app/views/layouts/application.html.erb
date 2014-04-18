@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Клиника Три-З</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= yield(:title) %></title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon_1.ico' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="<%= yield(:meta_keywords) %>" /> 
+    <meta name="description" content="<%= yield(:meta_description) %>" />
+    <%= render 'layouts/shim' %>    
+  </head>
+  <body style="<%= 'padding-top: 41px;' if current_page?(root_path) %>">
+    <%= render 'layouts/header' %>
+    <% if current_page?(root_path) %>
+      <%= render 'layouts/mainheader' %>
+    <% end %>
+    <div class="container container-fluid">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
+    </div>    
+    
+  </body>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        if ($('textarea').length > 0) {
+            var data = $('textarea');
+            $.each(data, function(i) {
+                CKEDITOR.replace(data[i].id);
+            });
+        }
+      });
+    </script>
 </html>
