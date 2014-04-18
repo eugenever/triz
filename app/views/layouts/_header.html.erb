@@ -11,41 +11,41 @@
 
       
       <%#= link_to "ТермоСИП", root_path, id: "logo" %>
-      <a class="brand" href="/">ТермоСип</a>
+      <a class="brand" href="/">Три-З</a>
 
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
 
       <nav>
         <ul class="nav pull-right">
-          <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Главная", root_path %></li>
-          <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "О компании", about_path %></li>
-          <li class="<%= 'active' if current_page?(price_path) %>"><%= link_to "Прайс-лист", price_path %></li>
-          <li class="<%= 'active' if current_page?(articles_path) %>"><%= link_to "Статьи", articles_path %></li>
+          <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Главная", '#' %></li>
+          <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "О компании", '#' %></li>
+          <li class="<%= 'active' if current_page?(price_path) %>"><%= link_to "Прайс-лист", '#' %></li>
+          <li class="<%= 'active' if current_page?(articles_path) %>"><%= link_to "Статьи", '#' %></li>
           
-          <li id="fat-menu" class="dropdown <%= 'active' if current_page?(fotomaterial_path) || current_page?(videomaterial_path) %>">
+          <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Наши работы<b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Фотографии", fotomaterial_path %></li>
+              <li><%= link_to "Фотографии", '#' %></li>
               <li class="divider"></li>
-              <li><%= link_to "Видео", videomaterial_path %></li>
+              <li><%= link_to "Видео", '#' %></li>
             </ul>
           </li>
 
-          <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Контакты", contact_path %></li>
+          <li class=""><%= link_to "Контакты", '#' %></li>
           <% if signed_in? %>
-            <li><%= link_to "Users", users_path %></li>
+            <li><%= link_to "Users", '#' %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Account <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Profile", current_user %></li>
-                <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                <li><%= link_to "Profile", '#' %></li>
+                <li><%= link_to "Settings", '#' %></li>
                 <li class="divider"></li>
                 <li>
-                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                  <%= link_to "Sign out", '#' %>
                 </li>
               </ul>
             </li>

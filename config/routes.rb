@@ -1,4 +1,7 @@
 TriZ::Application.routes.draw do
+
+  get "sitemap.xml" => "home#sitemap", format: :xml, as: :sitemap
+  get "robots.txt" => "home#robots", format: :text, as: :robots
   
   mount Ckeditor::Engine => '/ckeditor'
 
