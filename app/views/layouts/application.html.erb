@@ -12,12 +12,12 @@
     <meta name="description" content="<%= yield(:meta_description) %>" />
     <%= render 'layouts/shim' %>    
   </head>
-  <body style="<%= 'padding-top: 41px;' if current_page?(root_path) %>">
+  <body>
     <%= render 'layouts/header' %>
     <% if current_page?(root_path) %>
-      <%= render 'layouts/mainheader' %>
+      <%= render 'layouts/slider' %>
     <% end %>
-    <div class="container container-fluid">
+    <div class="container">
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
@@ -27,14 +27,4 @@
     </div>    
     
   </body>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        if ($('textarea').length > 0) {
-            var data = $('textarea');
-            $.each(data, function(i) {
-                CKEDITOR.replace(data[i].id);
-            });
-        }
-      });
-    </script>
 </html>
