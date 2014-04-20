@@ -1,8 +1,9 @@
 <footer class="footer">
 
   <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
-    <p class="navbar-text">&copy Copyright 2013</p>
-    <p class="navbar-text navbar-right" style=""><a href="http://www.script-tutorials.com/">Script Tutorials</a></p>
+    <p class="navbar-text" id="social">
+      <%= link_to image_tag("vkontakte.png"), 'http://vk.com/KlinikaTriZ', title: "Клиника «Три-З» Вконтакте", target: "_blank" %> <%= link_to image_tag("facebook.png"), 'http://facebook.com/KlinikaTriZ', title: "Клиника «Три-З» Facebook", target: "_blank" %> <%= link_to image_tag("instagram.png"), 'http://instagram.com/KlinikaTriZ', title: "Клиника «Три-З» Инстаграм", target: "_blank" %> <%= link_to image_tag("twitter.png"), 'http://twitter.com/KlinikaTriZ', title: "Клиника «Три-З» Twitter", target: "_blank" %> <%= link_to image_tag("skype.png"), 'skype:KlinikaTriZ?call', title: "Клиника «Три-З» звонок в Skype", target: "_blank" %> <%= link_to image_tag("odnoklassniki.png"), 'http://www.odnoklassniki.ru/KlinikaTriZ', title: "Клиника «Три-З» Одноклассники", target: "_blank" %> <%= link_to image_tag("youtube.png"), 'http://www.youtube.com/KlinikaTriZ', title: "Клиника «Три-З» Youtube", target: "_blank" %> Мы в социальных сетях – одно имя KlinikaTriZ, всегда оперативно для вас!
+    </p>
   </nav>
 
   <% if Rails.env.production? %>  
