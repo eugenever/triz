@@ -64,6 +64,172 @@ a.menu:after, .dropdown-toggle:after {
   }
 }
 
+.main-header {
+  padding: 10px 0 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  //background-image: linear-gradient(to bottom,#328bb1,#4baad3);
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  line-height: 1.428571429;
+  width: 100%;
+}
+
+.main-header .title {
+  color: #fff;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.main-header .desc {
+  color: #eee;
+  margin: 20px 0 0;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+#titleContainer {
+  width: auto;
+  //margin-left: 5%;
+  //margin-right: 5%;
+}
+
+.container .jumbotron {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  h1 {
+    font: normal 1.7em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    line-height: 1.4285em;
+  }
+  .stylep {
+    font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 0 4px;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.4285em;
+  }
+}
+
+.container .curled {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  h1 {
+    font: normal 1.7em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    line-height: 1.4285em;
+  }
+  .stylep {
+    font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 0 4px;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.4285em;
+  }
+}
+
+.container .raised {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  h1 {
+    font: normal 1.7em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    line-height: 1.4285em;
+  }
+  .stylep {
+    font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 0 4px;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.4285em;
+  }
+}
+
+.container .lifted {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  h1 {
+    font: normal 1.7em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    line-height: 1.4285em;
+  }
+  .stylep {
+    font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 0 4px;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.4285em;
+  }
+}
+
+.mainheaderh1 {
+    font: normal 1.1em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0 0 0 #ccc; /*--Не поддерживается IE--*/
+    line-height: 1.4285em;
+    //color: white;
+}
+
 #social {
   img {
     max-width: 29px;
@@ -211,6 +377,7 @@ html {
 body {
   background-image: asset_url("baika.png");
   background-repeat: repeat;
+  margin-top: 0px;
 }
 
 section {
@@ -504,7 +671,9 @@ h1 small {
 
 .well {
   margin-bottom: 5px;
-  background-color: #fff;
+  //background-image: asset_url("hbtkan.png");
+  //background-repeat: repeat;
+  //background-color: #fff;
   -moz-box-shadow: 0 0 6px rgba(0,0,0,0.06);
   -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.06);
   box-shadow: 0 0 6px rgba(0,0,0,0.06);
@@ -517,8 +686,75 @@ h1 small {
   //margin-bottom: 10px;
   //width: 100%;
   //padding: 19px;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
 }
+
+.wellj {
+  margin-bottom: 5px;
+  //background-image: asset_url("hbtkan.png");
+  //background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.8);//#428bca;//#3483a5;//rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  //overflow: hidden;
+  //-moz-overflow: hidden;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  //border-top: 1px solid #CCC;
+  //margin-bottom: 10px;
+  //width: 100%;
+  //padding: 19px;
+  border-radius: 5px;
+  color: white;
+}
+
+//врезки в текст
+.cl_lvrez {
+  float: left;    /*блок слева*/
+  font-size: 0.8em;  /*размер шрифта*/
+  border: 1px solid #000000;  /*граница толщина вид цвет */
+  height: auto;  /*высота блока — зависит от текста в нем*/
+  width: 35%;  /* %% от ширины статьи */
+  text-align: left;  /*текст равняем влево */
+  background-color: #cccccc;  /*цвет фона */
+  margin-bottom: 5px;  /*отступ от блока снизу*/
+  margin-right: 10px;  /* ---- справа*/
+  margin-top: 5px;  /* ---- сверху  */
+  margin-left: 0px;   /* ----- слева    */
+  padding: 5px;    /* отступ текста от границ внутри блока */
+}
+
+.cl_rvrez {
+  float: right;
+  font-size: 0.8em;
+  border: 1px solid #000000;
+  height: auto;
+  width: 35%;
+  text-align: center;
+  background-color: #cccccc;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 5px
+}
+
+.cl_vrez  {
+  border: 1px solid #000000;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #cccccc;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  padding: 5px
+}
+
+
 
 .page-header {
   background-color: whiteSmoke;
@@ -536,6 +772,10 @@ h1 small {
   //padding-left: 19px;
   //padding-right: 19px;
 }
+
+
+
+
 
 //таблицы
 .features-table
@@ -636,11 +876,11 @@ h1 small {
 //стилизация блока
 #secondary {
   background: white;
-  //background-image: -moz-linear-gradient(top, white,#EEE);
-  //background-image: -ms-linear-gradient(top, white, #EEE);
-  //background-image: -o-linear-gradient( top, white, #EEE);
-  //background-image: -webkit-linear-gradient(top, white, #EEE);
-  //background-image: linear-gradient(top, white, #EEE);
+  background-image: -moz-linear-gradient(top, white,#EEE);
+  background-image: -ms-linear-gradient(top, white, #EEE);
+  background-image: -o-linear-gradient( top, white, #EEE);
+  background-image: -webkit-linear-gradient(top, white, #EEE);
+  background-image: linear-gradient(top, white, #EEE);
   border: 1px solid #DDD;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -719,3 +959,172 @@ h1 small {
   height: auto;
 }
 //конец 2-го варианта карусели галлереи
+
+
+//блок с загнутыми углами
+.curled {
+    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    position:relative;
+    width:100%;
+    padding:1em;
+    //margin:2em 10px 4em;
+    margin-bottom: 15px;
+    background:#fff;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border:1px solid #efefef;
+   -moz-border-radius:0 0 120px 120px / 0 0 6px 6px;
+         border-radius:0 0 120px 120px / 0 0 6px 6px;
+}
+ 
+.curled:before,
+.curled:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+    bottom:12px;
+    left:10px;
+    width:50%;
+    height:55%;
+    max-width:200px;
+    -webkit-box-shadow:0 8px 12px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow:0 8px 12px rgba(0, 0, 0, 0.5);
+            box-shadow:0 8px 12px rgba(0, 0, 0, 0.5);
+     -webkit-transform:skew(-8deg) rotate(-3deg);
+        -moz-transform:skew(-8deg) rotate(-3deg);
+         -ms-transform:skew(-8deg) rotate(-3deg);
+          -o-transform:skew(-8deg) rotate(-3deg);
+             transform:skew(-8deg) rotate(-3deg);
+} 
+ 
+.curled:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.raised {
+    position:relative;
+    width:100%;
+    padding:1em;
+    margin:2em 10px 4em;
+    background:#fff;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}        
+ 
+.raised:before,
+.raised:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}
+ 
+.lifted {
+        position:relative;
+        width:100%;
+        padding:1em;
+        //margin:2em 10px 4em;
+        margin-bottom: 20px;
+        background:#fff;
+       border-radius:4px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-border-radius:4px;
+ 
+}
+ 
+.lifted:before,
+.lifted:after {
+        content:"";
+        position:absolute;
+        z-index:-2;
+        bottom:15px;
+        left:10px;
+        width:50%;
+        height:20%;
+        max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+            box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);
+       -moz-transform:rotate(-3deg);
+        -ms-transform:rotate(-3deg);
+         -o-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+}
+ 
+.lifted:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);
+       -moz-transform:rotate(3deg);
+        -ms-transform:rotate(3deg);
+         -o-transform:rotate(3deg);
+            transform:rotate(3deg);
+}
+
+
+
+//еще один блок с загнутыми углами
+.note {
+    position:relative;
+    width:100%;
+    padding:1em 1.5em;
+    //margin:2em auto;
+    color:#fff;
+    background:#97C02F;
+    overflow:hidden;
+}
+
+.note:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0; /* This trick side-steps a webkit bug */
+    border-style:solid;
+    border-color:#fff #fff #658E15 #658E15; /* A bit more verbose to work with .rounded too */
+    background:#658E15; /* For Opera when also applying a border-radius */
+    display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+    /* Optional: shadow */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.note.red {background:#C93213;}
+
+.note.red:before {border-color:#fff #fff #97010A #97010A; background:#97010A;}
+
+.note.blue {background:#53A3B4;}
+
+.note.blue:before {border-color:#fff #fff transparent transparent; background:transparent;}
+
+.note.taupe {background:#999868;}
+
+.note.taupe:before {border-color:#fff #fff #BDBB8B #BDBB8B; background:#BDBB8B;}
+
+.note.rounded {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+.note.rounded:before {
+    border-width:8px; /* Triggers a 1px 'step' along the diagonal in Safari 5 (and Chrome 10) */
+    border-color:#fff #fff transparent transparent; /* Avoids the 1px 'step' in webkit. Background colour shows through */
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-radius:0 0 0 5px;
+    border-radius:0 0 0 5px;
+}
