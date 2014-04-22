@@ -1,14 +1,44 @@
 <footer class="footer">
 
-  <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
-    <p class="navbar-text" id="social">
-      <%= link_to image_tag("vkontakte.png"), 'http://vk.com/KlinikaTriZ', title: "Клиника «Три-З» Вконтакте", target: "_blank" %> <%= link_to image_tag("facebook.png"), 'http://facebook.com/KlinikaTriZ', title: "Клиника «Три-З» Facebook", target: "_blank" %> <%= link_to image_tag("instagram.png"), 'http://instagram.com/KlinikaTriZ', title: "Клиника «Три-З» Инстаграм", target: "_blank" %> <%= link_to image_tag("twitter.png"), 'http://twitter.com/KlinikaTriZ', title: "Клиника «Три-З» Twitter", target: "_blank" %> <%= link_to image_tag("skype.png"), 'skype:KlinikaTriZ?call', title: "Клиника «Три-З» звонок в Skype", target: "_blank" %> <%= link_to image_tag("odnoklassniki.png"), 'http://www.odnoklassniki.ru/KlinikaTriZ', title: "Клиника «Три-З» Одноклассники", target: "_blank" %> <%= link_to image_tag("youtube.png"), 'http://www.youtube.com/KlinikaTriZ', title: "Клиника «Три-З» Youtube", target: "_blank" %> Мы в социальных сетях – одно имя KlinikaTriZ, всегда оперативно для вас!
-    </p>
-  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12" id="footbc">
+        <p style="text-align:center;margin-top:10px;"><%= link_to "О клинике", '#' %>&nbsp&nbsp&nbsp<%= link_to "Врачи", '#' %>&nbsp&nbsp&nbsp<%= link_to "Медицинские услуги", '#' %>&nbsp&nbsp&nbsp<%= link_to "Пациентам", '#' %>&nbsp&nbsp&nbsp<%= link_to "Вопрос-Ответ", '#' %>&nbsp&nbsp&nbsp<%= link_to "Отзывы", '#' %>&nbsp&nbsp&nbsp<%= link_to "Контакты", '#' %>&nbsp&nbsp&nbsp<%= link_to "Новости", '#' %>&nbsp&nbsp&nbsp<%= link_to "Вакансии", '#' %></p>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p style="text-align:center;font-size:0.95em;margin-bottom:10px;">Лицензии на осуществление медицинской деятельности: № ЛО-23-01-006416 от 02.10.2013 и № 20-01-000188 от 31.10.2011</p>
+      </div>
+
+      <div class="col-md-6 col-sm-4 col-xs-12">
+        <p style="text-align:center;"><%= link_to image_tag("logo.png", width: "90%", style: "max-width:218px"), '#' %></p>
+      </div>
+      <div class="col-md-6 col-sm-8 col-xs-12" id="footcontact">
+        <!-- <p>Мы в социальных сетях – одно имя KlinikaTriZ, всегда оперативно для вас!</p>  -->
+        <p style="font-size:0.95em;margin-bottom:3px;">Адрес: г. Краснодар, ул. Красных Партизан, 18</p>
+        <p style="font-size:0.95em;margin-bottom:3px;">Телефон: 8 800 100 1 333 (звонок по России бесплатный)</p>
+        <p style="font-size:0.95em;margin-bottom:3px;">Email: <%= link_to "info@tri-z.ru", 'mailto:info@tri-z.ru' %></p>
+        
+      </div>      
+  </div>
+  <div class="row" style="margin-bottom:20px;">
+    <div class="col-md-6">
+        <p style="text-align:center;font-size:0.95em;margin-bottom:3px;">Офтальмологическая клиника «Три-З» Краснодар<br>© 2000-2014 Все права защищены</p>
+      </div>
+      <div class="col-md-6">
+        <p class="navbar-text" id="social">
+        <%= link_to image_tag("vkontakte.png"), 'http://vk.com/KlinikaTriZ', title: "Клиника «Три-З» Вконтакте", target: "_blank" %> <%= link_to image_tag("facebook.png"), 'http://facebook.com/KlinikaTriZ', title: "Клиника «Три-З» Facebook", target: "_blank" %> <%= link_to image_tag("instagram.png"), 'http://instagram.com/KlinikaTriZ', title: "Клиника «Три-З» Инстаграм", target: "_blank" %> <%= link_to image_tag("twitter.png"), 'http://twitter.com/KlinikaTriZ', title: "Клиника «Три-З» Twitter", target: "_blank" %> <%= link_to image_tag("skype.png"), 'skype:KlinikaTriZ?call', title: "Клиника «Три-З» звонок в Skype", target: "_blank" %> <%= link_to image_tag("odnoklassniki.png"), 'http://www.odnoklassniki.ru/KlinikaTriZ', title: "Клиника «Три-З» Одноклассники", target: "_blank" %> <%= link_to image_tag("youtube.png"), 'http://www.youtube.com/KlinikaTriZ', title: "Клиника «Три-З» Youtube", target: "_blank" %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
 
   <% if Rails.env.production? %>  
   <!-- Yandex.Metrika counter -->
   
   <!-- /Yandex.Metrika counter -->
   <% end %>
+
 </footer>
