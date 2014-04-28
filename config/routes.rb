@@ -7,6 +7,13 @@ TriZ::Application.routes.draw do
 
   root 'static_pages#home'
 
+  match '/about_clinic/history', to: 'static_pages#history', via: 'get'
+  match '/about_clinic', to: 'static_pages#about_clinic', via: 'get'
+  match '/news', to: 'static_pages#news', via: 'get'
+  match '/news1', to: 'static_pages#news1', via: 'get'
+  match '/news2', to: 'static_pages#news2', via: 'get'
+  match '/news3', to: 'static_pages#news3', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
