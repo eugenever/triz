@@ -19,9 +19,9 @@ gem 'mysql2', '0.3.15'
 gem 'ckeditor'
 gem 'paperclip'
 gem 'dynamic_sitemaps'
+gem 'rails-footnotes', '>= 4.0.0', '<5'
 
-group :development, :test do
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+group :development, :test do  
   gem 'thin'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
