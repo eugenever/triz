@@ -21,6 +21,7 @@ gem 'paperclip'
 gem 'dynamic_sitemaps'
 
 group :development, :test do
+  gem 'rails-footnotes', '>= 4.0.0', '<5'
   gem 'thin'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
