@@ -440,6 +440,10 @@ footer {
   .carousel .item {
     height: 280px;
   }
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: 350px) {
@@ -453,6 +457,10 @@ footer {
   }
   .carousel .item {
     height: 250px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -476,6 +484,10 @@ footer {
   a.menu:after, .dropdown-toggle:after {
     content: none;
   }
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -498,7 +510,10 @@ footer {
   a.menu:after, .dropdown-toggle:after {
     content: none;
   }
-
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -513,6 +528,10 @@ footer {
   }
   .carousel .item {
     height: 250px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -1386,3 +1405,23 @@ h1 small {
   max-height: 242px;
 }
 //конец 2-го варианта карусели ралереи
+
+.information {
+  background: #d5e9f6 asset_url("tab_info.gif") no-repeat left top;
+  border: none;
+  padding: 1em 1em 0.25em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
+
+div.code_container {
+  background: #eee asset_url("tab_grey.gif") no-repeat left top;
+  padding: 0.25em 1em 0.5em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
+
+.note1 {
+  background: #fff9d8 asset_url("tab_note.gif") no-repeat left top;
+  border: none;
+  padding: 1em 1em 0.25em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
