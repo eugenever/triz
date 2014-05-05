@@ -53,14 +53,35 @@ after 'deploy:assets:precompile', 'copy_nondigest_assets'
 # Далее идут правила для перезапуска unicorn. Их стоит просто принять на веру - они работают.
 # В случае с Rails 3 приложениями стоит заменять bundle exec unicorn_rails на bundle exec unicorn
 namespace :deploy do
-  task :restart do
-    #run "if [ -f #{unicorn_pid} ] && [ -e /proc/$(cat #{unicorn_pid}) ]; then kill -USR2 `cat #{unicorn_pid}`; else cd #{deploy_to}/current && bundle exec unicorn_rails -c #{unicorn_conf} -E #{rails_env} -D; fi"
-     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
-  end
+  #task :restart do    
+  #   run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
+  #end
+  #task :start do
+  #  run "cd #{deploy_to}/current && bundle exec unicorn_rails -c #{unicorn_conf} -E #{rails_env} -D"
+  #end
+  #task :stop do
+  #  run "if [ -f #{unicorn_pid} ] && [ -e /proc/$(cat #{unicorn_pid}) ]; then kill -QUIT `cat #{unicorn_pid}`; fi"
+  #end
+  #
+  desc "Start the Thin processes"
   task :start do
-    run "cd #{deploy_to}/current && bundle exec unicorn_rails -c #{unicorn_conf} -E #{rails_env} -D"
+    run  <<-CMD
+      cd /srv/tri-z/current; bundle exec thin start -C config/thin.yml
+    CMD
   end
+
+  desc "Stop the Thin processes"
   task :stop do
-    run "if [ -f #{unicorn_pid} ] && [ -e /proc/$(cat #{unicorn_pid}) ]; then kill -QUIT `cat #{unicorn_pid}`; fi"
+    run <<-CMD
+      cd /srv/tri-z/current; bundle exec thin stop -C config/thin.yml
+    CMD
   end
+
+  desc "Restart the Thin processes"
+  task :restart do
+    run <<-CMD
+      cd /srv/tri-z/current; bundle exec thin restart -C config/thin.yml
+    CMD
+  end
+  
 end

@@ -1,0 +1,17 @@
+chdir: /srv/tri-z/current
+log: /srv/tri-z/shared/log/thin.log
+pid: /srv/tri-z/shared/pids/thin.pid
+socket: /srv/tri-z/shared/thin.sock
+
+address: 0.0.0.0
+timeout: 30
+wait: 30
+port: 4000
+log: log/thin.log
+max_conns: 1024
+require: []
+
+environment: production
+max_persistent_conns: 100
+servers: 2
+daemonize: true
