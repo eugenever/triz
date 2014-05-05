@@ -1,5 +1,8 @@
 TriZ::Application.routes.draw do
 
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
   get "sitemap.xml" => "home#sitemap", format: :xml, as: :sitemap
   get "robots.txt" => "home#robots", format: :text, as: :robots
   
@@ -13,6 +16,12 @@ TriZ::Application.routes.draw do
   match '/news1', to: 'static_pages#news1', via: 'get'
   match '/news2', to: 'static_pages#news2', via: 'get'
   match '/news3', to: 'static_pages#news3', via: 'get'
+
+  #регистрация новых пользователей
+  match '/signup', to: 'users#new', via: 'get'
+
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
